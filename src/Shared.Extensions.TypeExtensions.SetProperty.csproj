@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <PackageId>Shared.Extensions.TypeExtensions.SetProperty</PackageId>
+    <Description>Extension Method for System.Type adds SetProperty</Description>
+    <Copyright>Copyright ©  2020</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Radical-Dave/Shared.Extensions.TypeExtensions.SetProperty</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Radical-Dave/Shared.Extensions.TypeExtensions.SetProperty</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>extensions system.type setproperty</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
