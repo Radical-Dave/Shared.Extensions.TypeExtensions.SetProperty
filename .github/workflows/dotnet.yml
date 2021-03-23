@@ -22,6 +22,8 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal      
+      run: dotnet test --no-build --verbosity normal
+    - name: Pack
+      run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source src/Shared.Extensions.TypeExtensions.SetProperty.csproj
     - name: Publish NuGet
       run: dotnet nuget push src/bin/Release/Shared.Extensions.TypeExtensions.SetProperty.0.0.1.nupkg --api-key  ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
